@@ -4,7 +4,7 @@ from fastapi import FastAPI
 
 DATABASE_URL = "sqlite:///database.db"
 
-engine = create_engine(DATABASE_URL, echo=True)
+engine = create_engine(DATABASE_URL)
 
 
 def get_session():
